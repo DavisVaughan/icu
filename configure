@@ -79,7 +79,6 @@ fi
 # Test version of libicu
 ${CC} ${CPPFLAGS} ${PKG_TEST_CFLAGS} ${CFLAGS} -E ${PKG_TEST_FILE} >/dev/null 2>&1
 
-# On Ubuntu we enforce using the PPA
 if [ $? -ne 0 ]; then
   echo "WARNING: your version of libicu is really old (< icu 55)! Many features might not work!"
 fi
