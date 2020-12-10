@@ -1,0 +1,7 @@
+PKG_CFLAGS = -DNDEBUG -I../inst/include/apple -DU_DISABLE_RENAMING=1
+PKG_LIBS = -licucore
+
+all: clean
+
+clean:
+	rm -f $(SHLIB) $(OBJECTS)

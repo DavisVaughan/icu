@@ -1,2 +1,4 @@
 ^icu\.Rproj$
 ^\.Rproj\.user$
+^configure.log$
+^LICENSE\.md$

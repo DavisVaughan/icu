@@ -1,0 +1,18 @@
+VERSION = 55.1
+RWINLIB = ../windows/icu-$(VERSION)
+
+CXX_STD = CXX11
+
+PKG_CPPFLAGS = \
+	-I${RWINLIB}/include
+
+PKG_LIBS = -L${RWINLIB}/lib${R_ARCH} \
+	-lsicuin -lsicuuc -lsicudt
+
+all: clean winlibs
+
+winlibs:
+	"${R_HOME}/bin${R_ARCH_BIN}/Rscript.exe" "../tools/winlibs.R" ${VERSION}
+
+clean:
+	rm -f $(OBJECTS) $(SHLIB)
