@@ -16,3 +16,5 @@ RoxygenNote: 7.1.1
 URL: https://github.com/DavisVaughan/icu
 BugReports: https://github.com/DavisVaughan/icu/issues
 SystemRequirements: libicu (>= 55.1): libicu-devel (rpm) or libicu-dev (deb).
+Suggests: 
+    covr

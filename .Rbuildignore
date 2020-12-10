@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 ^configure.log$
 ^LICENSE\.md$
+^codecov\.yml$
+^\.github$
